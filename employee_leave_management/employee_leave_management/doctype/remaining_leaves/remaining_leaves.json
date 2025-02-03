@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-22 13:01:06.327700",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_765x",
+  "leave_type",
+  "leaves_taken",
+  "remaining_leaves",
+  "balance_leaves_updated_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_765x",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "leave_type",
+   "fieldtype": "Data",
+   "label": "Leave Type"
+  },
+  {
+   "fieldname": "leaves_taken",
+   "fieldtype": "Data",
+   "label": "Leaves Taken"
+  },
+  {
+   "fieldname": "remaining_leaves",
+   "fieldtype": "Data",
+   "label": "Remaining Leaves"
+  },
+  {
+   "fieldname": "balance_leaves_updated_date",
+   "fieldtype": "Data",
+   "label": "Balance Leaves updated Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-01-24 22:37:22.103567",
+ "modified_by": "Administrator",
+ "module": "Employee Leave Management",
+ "name": "Remaining Leaves",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:leave_type",
+ "creation": "2025-01-21 10:49:59.324312",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_knkt",
+  "leave_type",
+  "date_range_section",
+  "from_date",
+  "to_date",
+  "leave_allocation_section",
+  "allocated_leaves",
+  "carry_forward",
+  "maximum_carry_forward_leaves",
+  "is_paid"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_knkt",
+   "fieldtype": "Section Break",
+   "label": "Leave Type Details"
+  },
+  {
+   "fieldname": "leave_type",
+   "fieldtype": "Data",
+   "label": "Leave Type",
+   "unique": 1
+  },
+  {
+   "fieldname": "date_range_section",
+   "fieldtype": "Section Break",
+   "label": "Date Range"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "leave_allocation_section",
+   "fieldtype": "Section Break",
+   "label": "Leave Allocation"
+  },
+  {
+   "fieldname": "allocated_leaves",
+   "fieldtype": "Int",
+   "label": "Allocated Leaves"
+  },
+  {
+   "default": "0",
+   "fieldname": "carry_forward",
+   "fieldtype": "Check",
+   "label": "carry Forward"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_paid",
+   "fieldtype": "Check",
+   "label": "Is Paid"
+  },
+  {
+   "depends_on": "eval:doc.carry_forward==1",
+   "fieldname": "maximum_carry_forward_leaves",
+   "fieldtype": "Int",
+   "label": "Maximum carry forward leaves"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-21 11:10:05.931162",
+ "modified_by": "Administrator",
+ "module": "Employee Leave Management",
+ "name": "Leave Type",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

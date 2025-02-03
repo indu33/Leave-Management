@@ -140,16 +140,41 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+    "Leave Balances": {
+        "validate": "employee_leave_management.employee_leave_management.doctype.leave_balances.leave_balances.update_leave_balances"
+    },
+    "Leave Application": {
+        "on_update": "employee_leave_management.employee_leave_management.doctype.leave_application.leave_notification.send_leave_notification",
+        #"validate": "employee_leave_management.employee_leave_management.doctype.leave_application.Pending_leave_remainders.notify_team_manager_on_pending_status"
+    }
+}
+
+
+
+
+
 
 # Scheduled Tasks
 # ---------------
+# hooks.py
+
+scheduler_events = {
+    "daily": [
+       "employee_leave_management.employee_leave_management.doctype.leave_application.Pending_leave_reminders.send_pending_leave_approval_reminders",
+    ],
+    
+    "weekly": [
+        "employee_leave_management.tasks.weekly_pending_leaves_summary"
+    ],
+    
+    "monthly": [
+        "employee_leave_management.tasks.send_leave_balance_emails"
+    ]
+}
+
+
+
 
 # scheduler_events = {
 # 	"all": [
@@ -244,4 +269,6 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
+
+
 

@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:EMP-{MM}-ID-{employee_id}",
+ "creation": "2025-01-20 15:43:41.349866",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_xjsa",
+  "employee_id",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "full_name",
+  "date_of_birth",
+  "gender",
+  "email_address",
+  "phone_number",
+  "column_break_8h22",
+  "date_of_joining",
+  "designation",
+  "department",
+  "employee_type",
+  "status",
+  "address"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_xjsa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Data",
+   "label": "Employee ID",
+   "unique": 1
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale\nPrefer Not to say"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "column_break_8h22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date of Joining"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Select",
+   "label": "Designation",
+   "options": "\nSoftware Developer / Engineer\nJunior Developer\nWeb Developer\nFrontend Developer\nBackend Developer\nFull Stack Developer\nQuality Assurance (QA) Tester\nTest Engineer\nTechnical Support Engineer\nIT Support Specialist\nDatabase Administrator (Junior)\nSystem Administrator (Junior)\nNetwork Administrator (Junior)\nHelpdesk Technician\nIT Intern\nSoftware Engineer\nDevOps Engineer\nDatabase Administrator\nCloud Engineer\nBusiness Analyst\nProject Manager\nUX/UI Designer\nScrum Master\nSystems Engineer\nApplication Support Analyst\nNetwork Engineer\nSecurity Analyst\nData Analyst\nProduct Manager\nWeb Designer\nSenior Software Engineer\nLead Developer\nPrincipal Developer\nSenior System Administrator\nSenior Network Engineer\nSenior QA Engineer\nSenior DevOps Engineer\nSenior Data Scientist\nSenior Business Analyst\nSecurity Architect\nSolutions Architect\nSenior Cloud Engineer\nProduct Owner\nIT Project Manager\nEngineering Manager\nTechnical Lead\nIT Director\nCTO (Chief Technology Officer)\nChief Information Officer (CIO)\nVP of Engineering\nVP of IT\nDirector of Engineering\nDirector of IT\nHead of IT\nHead of Product\nHead of Data Science\nData Scientist\nMachine Learning Engineer\nAI Engineer\nBlockchain Developer\nAR/VR Developer\nEmbedded Systems Engineer\nMobile App Developer (iOS/Android)\nGame Developer\nCloud Solutions Architect\nCybersecurity Specialist\nDigital Transformation Consultant\nEnterprise Architect\nIT Consultant"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Select",
+   "label": "Department",
+   "options": "\nSoftware Development / Engineering\nIT Support / Helpdesk\nQuality Assurance (QA) / Testing\nDevOps / Infrastructure\nNetwork\nSecurity / Cybersecurity\nCloud / Infrastructure\nData / Analytics\nProduct Management / Product Development\nUX/UI Design\nProject Management\nIT Operations\nResearch & Development (R&D)\nHR / Talent Acquisition\nSales & Marketing\nLegal & Compliance\nCustomer Success / Client Services\nFinance / Accounting\nExecutive Leadership / Management\nBusiness Intelligence (BI)"
+  },
+  {
+   "fieldname": "employee_type",
+   "fieldtype": "Select",
+   "label": " Employee Type",
+   "options": "\nHybrid\nFull Time\nPart Time\nIntern"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nActive\nInActive"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-24 12:29:30.632956",
+ "modified_by": "Administrator",
+ "module": "Employee Leave Management",
+ "name": "Employees",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

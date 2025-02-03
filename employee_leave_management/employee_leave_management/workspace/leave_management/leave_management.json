@@ -1,0 +1,92 @@
+{
+ "app": "frappe",
+ "charts": [],
+ "content": "[{\"id\":\"XQPvpUbNAW\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total leaves applied\",\"col\":4}},{\"id\":\"5BLyvLmSlZ\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Pending approvals\",\"col\":4}},{\"id\":\"VHX5QutkjW\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Employees leave Today\",\"col\":4}},{\"id\":\"-CAr1fO6hr\",\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size: 16px;\\\">Doctypes</span>\",\"col\":12}},{\"id\":\"D4a-tGQAi_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Leave Application\",\"col\":3}},{\"id\":\"F5M5m3zKvC\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Leave Allocation\",\"col\":3}},{\"id\":\"UiJ5IXBlWk\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Leave Type\",\"col\":3}},{\"id\":\"htaJbSFUw8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Leave Balances\",\"col\":3}},{\"id\":\"ZOeKXiwuIO\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Reports</b></span>\",\"col\":12}},{\"id\":\"TvNKmqIG38\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Monthly Leave Summary\",\"col\":3}},{\"id\":\"JNirJvRgyS\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Leave Balance Report\",\"col\":3}}]",
+ "creation": "2025-01-26 23:01:21.777173",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "grid",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Leave Management",
+ "link_type": "DocType",
+ "links": [],
+ "modified": "2025-01-27 07:50:34.921209",
+ "modified_by": "Administrator",
+ "module": "Employee Leave Management",
+ "name": "Leave Management",
+ "number_cards": [
+  {
+   "label": "Total leaves applied",
+   "number_card_name": "Total leaves applied"
+  },
+  {
+   "label": "Pending approvals",
+   "number_card_name": "Pending approvals"
+  },
+  {
+   "label": "Employees leave Today",
+   "number_card_name": "total employee leave today"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "Employee Leave Management",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 25.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Leave Balance Report",
+   "link_to": "Leave Balance Report",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Leave Application",
+   "link_to": "Leave Application",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Leave Allocation",
+   "link_to": "Leave Allocation",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Leave Type",
+   "link_to": "Leave Type",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Leave Balances",
+   "link_to": "Leave Balances",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Monthly Leave Summary",
+   "link_to": "Monthly Leave Summary",
+   "type": "Report"
+  }
+ ],
+ "title": "Leave Management",
+ "type": "Workspace"
+}

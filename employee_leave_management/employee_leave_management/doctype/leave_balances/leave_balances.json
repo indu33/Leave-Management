@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{DD}-{MM}-{YY}-{employee_id}-{employee_name}-{#####} ",
+ "creation": "2025-01-21 11:38:02.073591",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_pn0h",
+  "employee_id",
+  "employee_name",
+  "department",
+  "gender",
+  "leave_allocation_and_balance_section",
+  "leave_records",
+  "section_break_qhwf",
+  "leave_balance"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_pn0h",
+   "fieldtype": "Section Break",
+   "label": "Basic Information"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "label": "Employee id",
+   "options": "Employees"
+  },
+  {
+   "fetch_from": "employee_id.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "leave_allocation_and_balance_section",
+   "fieldtype": "Section Break",
+   "label": "Leave Allocation and Balance"
+  },
+  {
+   "fieldname": "leave_records",
+   "fieldtype": "Table",
+   "label": "Leave Allocation",
+   "options": "Leave Records"
+  },
+  {
+   "fetch_from": "employee_id.full_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "section_break_qhwf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "leave_balance",
+   "fieldtype": "Table",
+   "label": "Leave Balance",
+   "options": "Remaining Leaves"
+  },
+  {
+   "fetch_from": "employee_id.gender",
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "gender"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-24 16:07:12.478549",
+ "modified_by": "Administrator",
+ "module": "Employee Leave Management",
+ "name": "Leave Balances",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

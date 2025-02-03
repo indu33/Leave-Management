@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-22 11:51:11.395008",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_7dsy",
+  "leave_type",
+  "from_date",
+  "to_date",
+  "allocated_leaves",
+  "carry_forward_leaves",
+  "paid_leaves"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_7dsy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "leave_type",
+   "fieldtype": "Data",
+   "label": "Leave Type"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Data",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Data",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "allocated_leaves",
+   "fieldtype": "Data",
+   "label": "Allocated Leaves"
+  },
+  {
+   "fieldname": "carry_forward_leaves",
+   "fieldtype": "Data",
+   "label": "Carry Forward leaves"
+  },
+  {
+   "fieldname": "paid_leaves",
+   "fieldtype": "Data",
+   "label": "Paid Leaves"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-01-23 18:52:50.060906",
+ "modified_by": "Administrator",
+ "module": "Employee Leave Management",
+ "name": "Leave Records",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
